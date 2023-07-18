@@ -1,0 +1,9 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cart-icon {
+  width: 48px;
+  height: 48px;
+}
