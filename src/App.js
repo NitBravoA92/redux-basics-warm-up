@@ -21,18 +21,43 @@ function App() {
 
   if (isLoading) {
     return (
-      <div className="loading">
-        <h1>Loading products...</h1>
+      <div className="container-fluid py-5">
+        <div className="row justify-content-center">
+          <h1 className="fs-1 text-secondary fw-bolder text-center">Loading products...</h1>
+        </div>
       </div>
     );
   }
 
   return (
-    <main className="App">
-      {isOpen && <Modal />}
-      <Navbar />
-      <CartContainer />
-    </main>
+    <>
+      <main className="App">
+        {isOpen && <Modal />}
+        <Navbar />
+        <div className="container-fluid py-5">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8 col-lg-7 col-xl-6">
+              <CartContainer />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div className="row">
+          <div className="col-12">
+            <p className="text-center">
+              This project is made based on the tutorial
+              {' '}
+              <a href="https://www.youtube.com/watch?v=bbkBuqC1rU4">Redux Toolkit Tutorial – JavaScript State Management Library</a>
+              {' '}
+              The source code was developed by
+              {' '}
+              <a href="https://github.com/john-smilga">John Smilga</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
 
