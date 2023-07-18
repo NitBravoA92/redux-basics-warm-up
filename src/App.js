@@ -1,8 +1,11 @@
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">Welcome to Redux</div>
+    <main className="App">
+      <Navbar />
+    </main>
   );
 }
 
