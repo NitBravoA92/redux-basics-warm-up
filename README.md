@@ -1,6 +1,6 @@
 # Redux Basics: Warm-up
 
-Exercise to Use Redux in Reacjs
+Exercise to Use Redux Toolkit and React Redux.
 
 # Getting Started with Create React App
 
