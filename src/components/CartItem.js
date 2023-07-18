@@ -3,7 +3,9 @@ import { useDispatch } from 'react-redux';
 import { removeItem, increase, decrease } from '../features/cart/cartSlice';
 import { ChevronDown, ChevronUp } from '../icons';
 
-const CartItem = ({ id, img, title, price, amount, }) => {
+const CartItem = ({
+  id, img, title, price, amount,
+}) => {
   const dispatch = useDispatch();
 
   return (
